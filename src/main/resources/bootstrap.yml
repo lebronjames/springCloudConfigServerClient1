@@ -1,0 +1,10 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: jianghu
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://10.5.2.241:7001/
