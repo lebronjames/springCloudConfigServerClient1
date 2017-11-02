@@ -1,5 +1,6 @@
 SpringCloud分布式配置中心springCloudConfigServer的Client客户端
-1) pom.xml增加Config Client(spring-cloud-starter-config)、Web(spring-boot-starter-web)的依赖
+1) pom.xml增加Config Client(spring-cloud-starter-config)、Eureka、
+Web(spring-boot-starter-web)、监控(spring-boot-starter-actuator)的依赖
 2) 创建bootstrap.properties配置，来指定config server
 spring.application.name=jianghu
 spring.cloud.config.profile=dev

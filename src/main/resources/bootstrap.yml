@@ -5,6 +5,15 @@ spring:
     name: jianghu
   cloud:
     config:
+      discovery:
+      #开启通过服务来访问Config Server的功能
+        enabled: true
+      #指定Config Server注册的服务名
+        serviceId: config-server
       profile: dev
       label: master
       uri: http://10.5.2.241:7001/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.5.2.241:1111/eureka/
